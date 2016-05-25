@@ -60,14 +60,14 @@ function getCookie(cname) {
 
 
       function checkCookie() {
-      var user=getCookie("username");
-      if (user != "") {
-          alert("Welcome again " + user + ", you've visited this site " + amt() + " times.");
-      } else {
-          user = prompt("Please enter a temporary username:","");
-          if (user != "" && user != null) {
-            setCookie("username", user, 30);
-          }
+    var user=getCookie("username");
+    if (user != "") {
+        alert("Welcome again " + user + ", you've visited this site " + amt() + " times.");
+    } else {
+       user = prompt("Please enter a temporary username:","");
+       if (user != "" && user != null) {
+           setCookie("username", user, 30);
+       }
     }
 }
 </script>
@@ -75,7 +75,7 @@ function getCookie(cname) {
 <!--this is what prints out when you click the button-->
       <script type="text/javascript">
          <!--
-            function ReadCookie()
+            function readCookie()
             {
                var allcookies = document.cookie;
                document.write ("All Cookies : " + allcookies );
@@ -88,13 +88,27 @@ function getCookie(cname) {
                   name = cookiearray[i].split('=')[0];
                   value = cookiearray[i].split('=')[1];
                   /*expDays = cookiearray[i].split('=') [2];*/
-                  document.write ("Key is : " + name + " and Value is : " + value + ", and Expiry is" + expDays + " days. <br></br>");
+                  document.write ("Key is : " + name + " and Value is : " + value + ", and Expiry is" + expDays + " days.");
                }
             }
          //-->
       </script>
 
-
+<!--to try add a "delete" cookie option-->
+      <script type="text/javascript">
+         <!--
+            function writeCookie()
+            {
+               var now = new Date();
+               now.setMonth( now.getMonth() - 1 );
+               cookievalue = escape(document.myform.customer.value) + ";"
+               
+               document.cookie="name=" + cookievalue;
+               document.cookie = "expires=" + now.toUTCString() + ";"
+               document.write("Setting Cookies : " + "name=" + cookievalue );
+            }
+          //-->
+      </script>
 
 
 
@@ -236,11 +250,20 @@ This was retrieved from http://www.javascriptkit.com/script/cut13.shtml -->
 <!--reading the information-->
       <form name="myform" action="">
          <p> Click the following button and see the result:</p>
-         <p><input type="button" value="Cookie Information" onclick="ReadCookie()"/></p>
+         <p><input type="button" value="Cookie Information" onclick="readCookie()"/></p>
       </form>
     <p2>
       Note: you have to refresh the page to get back after pressing the button.
     </p2>
+
+
+<!--the rest of the "delete" cookie option-->
+      <form name="myform" action="">
+         Enter name: <input type="text" name="customer"/>
+         <input type="button" value="Set Cookie" onclick="writeCookie()"/>
+      </form>
+
+
 
 
 
