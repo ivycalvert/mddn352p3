@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>MDDN352 PROJECT3</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style2.css" rel="stylesheet">
+
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+
+
+<!--DIDN'T ACTUALLY USE THIS YET BUT PLAN TO
+to try add a "delete" cookie option
+      <script type="text/javascript">
+         <!--
+            function writeCookie()
+            {
+               var now = new Date();
+               now.setMonth( now.getMonth() - 1 );
+               cookievalue = escape(document.myform.customer.value) + ";"
+               
+               document.cookie="name=" + cookievalue;
+               document.cookie = "expires=" + now.toUTCString() + ";"
+               document.write("Setting Cookies : " + "name=" + cookievalue );
+            }
+      </script>-->
+
+
+
+  </head>
+  <body>
+
+  <body onload="checkCookie()">
+
+
+
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand">
+                    <img src="img/icon3.png" alt="">
+                </a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                      <a href="concept.html">Concept</a>
+                    </li>                    
+                    <li>
+                        <a href="research.html">Research</a>
+                    </li>                    
+                    <li>
+                        <a href="">Cookie Experiments</a>
+                    </li>
+
+
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+
+
+
+
+
+    <div class="container bodyWrapper">
+    <!--use "container if you want a smaller field, "container-fluid" spans the whole window width-->
+<!--below counter how many times a person has visited this page
+This was retrieved from http://www.javascriptkit.com/script/cut13.shtml -->
+
+
+
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+          <a name="two"></a>
+          <div class="text">
+          <h2>  NEW COOKIE EXPERIEMENT </h2>
+
+          <p>
+          Here is the new cookie experiement I did -- I wanted to create read and delete cookie buttons so you could begin to interact with the cookies on this page (unfortunately I was unsuccessful in making it so you coudl interact with other cookies on your computer, but I am slowly beginning to understand how cookies function).
+          </p>
+          <p>
+            The first cookie created is an example of how cookies can recognise the device and remember them. This example measures how often this site is visited by the same device. While this is different to that which this project aims to monitor, it was important to understand how cookies function.
+          </p>
+
+<!--
+      <form name="myform" action="">
+         Enter name: <input type="text" name="customer"/>
+         <input type="button" value="Set Cookie" onclick="WriteCookie();"/>
+      </form>
+-->
+<!--reading the information-->
+    <p> 
+      <form name="myform" action="">
+         <p> Click the following button and see the result:</p>
+        <p>
+          <input type="button" value="Cookie Information" onclick="readCookie()"/>
+        </p>
+      </form>
+    <p2>
+      Note: you have to refresh the page to get back after pressing the button.
+    </p2>
+    <!--the rest of the "delete" cookie option
+      <form name="myform" action="">
+         Enter name: <input type="text" name="customer"/>
+         <input type="button" value="Set Cookie" onclick="writeCookie()"/>
+      </form>-->
+    </p>
+      </div>
+      </div>
+
+
+
+    </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/cookieManagement.js"></script>
+  </body>  
+
+      <footer>
+        Guise © (2016)
+      </footer>
+</html>

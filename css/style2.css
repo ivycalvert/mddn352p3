@@ -1,0 +1,109 @@
+h1{
+	color: white;
+	font-size: 50px;
+}
+
+h2 {
+	text-align: center;
+	background-color:#e1e1e1;
+}
+
+
+h3 {
+	text-align:center;
+	background-color: #e1e1e1;
+}
+
+p {
+	font-size:2.25vmin;
+	text-align: justify;
+
+}
+
+.p2 {
+
+    font-size:2.1vmin;
+    text-align: left;
+}
+
+.navbar-fixed-top {
+	border: 0px;
+	background-color:#e1e1e1;
+}
+body {
+    padding-top: 70px; /* Required padding for .navbar-fixed-top. Change if height of navigation changes. */
+}
+
+.navbar-fixed-top .nav {
+    padding: 15px 0;
+    background-color:#e1e1e1;
+}
+
+.navbar-fixed-top .navbar-brand {
+    padding: 0 15px;
+    background-color:#e1e1e1;
+}
+
+@media(min-width:768px) {
+    body {
+        padding-top: 30px; /* Required padding for .navbar-fixed-top. Change if height of navigation changes. */
+    }
+
+    .navbar-fixed-top .navbar-brand {
+        padding: 15px 0;
+        background-color:#e1e1e1;
+    }
+}
+
+
+
+
+
+
+.icon {
+	width: 300px;
+}
+
+.bodyWrapper{
+	/*border:1px solid black;*/
+
+}
+
+.text{
+	/*border:1px solid black;*/
+	padding-top: 10vmin;
+	overflow: auto;
+/*	font-size: 90%;*/
+}
+
+.image{
+	position:center;
+	padding:40px;
+
+}
+
+.image img {
+	padding: 5px;
+	width: 100%;
+	height: auto;
+}
+
+.sketches {
+	/*border: 1px solid black;*/
+	min-height:30px;
+}
+
+footer {
+position:absolute;
+margin-top: 30px;
+bottom:0;
+text-align: center ;
+font-size: 1.75vmin;
+padding-top:1.25vmin;
+width: 100% ;
+height: 5vmin ;
+background-color: #e1e1e1 ;
+}
+
+
+
